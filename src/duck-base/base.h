@@ -1,14 +1,7 @@
 #ifndef DUCK_BASE_BASE_H
 #define DUCK_BASE_BASE_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-const char *ok(void);
-
-#ifdef __cplusplus
-}
-#endif
+// Public functions
+const char *duck_ok(void);
 
 #endif /* DUCK_BASE_BASE_H */
