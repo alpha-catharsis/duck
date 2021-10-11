@@ -28,6 +28,7 @@ AC_CONFIG_FILES([Makefile
                  src/Makefile
                  src/duck-base/Makefile
                  src/duck-cli/Makefile
+                 src/duck-lib-example/Makefile
                  src/duck-server/Makefile
                 ])
 AC_OUTPUT
