@@ -6,8 +6,7 @@
 
 // builtin kinds
 extern const o_kind k_kind;
-extern const o_kind k_void;
-extern const o_kind k_bool;
+extern const o_kind k_func;
 extern const o_kind k_cstr;
 
 #endif /* DUCK_BASE_BUILTIN_KINDS_H */

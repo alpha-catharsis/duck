@@ -19,6 +19,6 @@ typedef struct s_cstr {
 } o_cstr;
 
 // helper macro
-#define CSTR_OBJ(str) {{g_kind_cstr}, {str}}
+#define CSTR_OBJ(str) (o_cstr){{&k_cstr}, {str}}
 
 #endif /* DUCK_BASE_CSTR_H */

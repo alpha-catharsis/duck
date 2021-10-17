@@ -8,9 +8,9 @@
 
 // function descriptor
 typedef struct s_func_desc {
-    t_cstr name;
-    t_opaque_ptr func;
-    o_func_kind *kind;
+  const o_func_kind *kind;
+  t_cstr name;
+  t_opaque_func_ptr func;
 } t_func_desc;
 
 // function object

@@ -8,7 +8,7 @@ typedef struct s_kind o_kind;
 
 // object
 typedef struct s_obj {
-    const o_kind *kind_guid;
+    const o_kind *kind;
 } t_obj;
 
 #endif /* DUCK_BASE_OBJECT_H */

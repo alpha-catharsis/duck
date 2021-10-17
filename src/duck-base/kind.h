@@ -2,14 +2,17 @@
 #define DUCK_BASE_KIND_H
 
 // duck base headers
+#include "func.h"
 #include "defs.h"
 #include "guid.h"
 #include "object.h"
 
+typedef struct s_func o_func;
+
 // kind descriptor
 typedef struct s_kind_desc {
     t_guid guid;
-    t_cstr name;
+    const o_func *f_show;
 } t_kind_desc;
 
 // kind object

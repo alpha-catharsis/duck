@@ -34,8 +34,9 @@ typedef size_t t_size;
 typedef uint8_t t_byte;
 typedef uint8_t *t_byte_ptr;
 
-// opaque pointer typedef
+// opaque pointers typedef
 typedef void *t_opaque_ptr;
+typedef void *(*t_opaque_func_ptr)(void *);
 
 // boolean enumeration
 static const t_bool v_false = 0;
