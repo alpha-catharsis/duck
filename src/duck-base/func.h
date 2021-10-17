@@ -3,20 +3,20 @@
 
 // duck base headers
 #include "defs.h"
-#include "type.h"
+#include "func_kind.h"
+#include "object.h"
 
 // function descriptor
 typedef struct s_func_desc {
     t_cstr name;
     t_opaque_ptr func;
-    t_u32 param_num;
-    t_opaque_ptr params;
+    o_func_kind *kind;
 } t_func_desc;
 
-// parameter descriptor
-typedef struct s_param_desc {
-    t_cstr name;
-    t_type_id id;
-} t_param_desc;
+// function object
+typedef struct s_func {
+    t_obj obj;
+    t_func_desc desc;
+} o_func;
 
 #endif /* DUCK_BASE_FUNC_H */

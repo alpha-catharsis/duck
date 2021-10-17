@@ -10,7 +10,7 @@ t_bool hexstr_to_u64(t_u64 *a_val, const char *a_str);
 void u64_to_hexstr(t_u64 a_val, char *a_str);
 
 // guid creation
-t_bool init_guid(t_guid *a_guid) {
+t_bool init_guid_new(t_guid *a_guid) {
     t_u64 random;
     t_u64 time;
 
@@ -31,6 +31,13 @@ t_bool init_guid(t_guid *a_guid) {
     return v_true;
 }
 
+// guid copying
+void guid_copy(t_guid *a_dest, t_guid *a_src)
+{
+    a_dest->random = a_src->random;
+    a_dest->time = a_src->time;
+}
+
 // guid comparison
 t_bool guid_eq(t_guid *a_lguid, t_guid *a_rguid) {
     return (a_lguid->random = a_rguid->random) &&
@@ -43,7 +50,7 @@ t_bool guid_le(t_guid *a_lguid, t_guid *a_rguid) {
     }else if (a_lguid->random > a_rguid->random) {
         return v_false;
     }else{
-        return a_lguid->time < a_rguid->time;
+        return a_lguid->time <= a_rguid->time;
     }
 }
 

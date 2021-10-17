@@ -9,7 +9,7 @@ int main()
 {
     t_guid guid;
     t_guid_str str;
-    if(init_guid(&guid)) {
+    if (init_guid_new(&guid)) {
         guid_to_str(&guid, str);
         printf("GUID: %s\n", str);
     }else{
