@@ -1,6 +1,6 @@
 #include "base.h"
 
-const char* ok()
+const char* ok(void)
 {
     return "OK";
 }

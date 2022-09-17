@@ -1,7 +1,7 @@
 # Initial tasks
 AC_PREREQ([2.71])
 AC_INIT([duck],[0.1.0],[alpha.catharsis@gmail.com])
-AC_CONFIG_SRCDIR([src/quack/main.cpp])
+AC_CONFIG_SRCDIR([src/quack/main.c])
 AC_CONFIG_HEADERS([src/config.h])
 AC_CONFIG_MACRO_DIRS([m4])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
@@ -9,7 +9,6 @@ LT_INIT
 
 # Checks for programs.
 AC_PROG_CC
-AC_PROG_CXX
 AC_PROG_AWK
 AC_PROG_INSTALL
 AC_PROG_LN_S
