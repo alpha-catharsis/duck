@@ -1,4 +1,4 @@
-#!/run/current-system/sw/bin/bash
+#!/usr/bin/env bash
 
 rm aclocal.m4
 rm -rv autom4te.cache

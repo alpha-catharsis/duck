@@ -1,0 +1,41 @@
+#+TITLE: Duck Basics
+#+OPTIONS: toc:nil
+
+
+* What is Duck
+
+Duck is:
+- A programming language
+- A interactive evaluation environment
+- A development environment
+- A shell for the operating system
+- A distributed system
+
+** Duck as programming language
+
+Main feature:
+- 3 modes of operation:
+  + interpreted
+  + JIT compiled
+  + AOT compiled
+- Automatic memory management
+- Memory safe (guaranteed no memory corruption)
+- Exception management
+- Native Sandboxing support (Execution environments)
+- Hyper modular system with DB approach
+  + each construct is a separate module at is interpreted/compiled separately
+  + a system wide DB manages all constructs and their availability in
+    the execution environments
+- Data/Object/Concept/View paradigm
+- Extended reflection
+  + Basic reflection
+  + Embedded source code (for interpreted mode)
+  + Embedded documentation
+- Native interface for C API (unsafe)
+- Native persistance support with DB approach
+- Native remote object access
+- Terse pleasant syntax
+- Decent performance
+  + at maximum 4 times slower than C on average
+  + at maximum 3 times higher memory consumption than C  on average
+    (for >100MB global allocated memory)

@@ -1,12 +1,15 @@
-// Standard C++ headers
-#include <stdio.h>
-#include <stdlib.h>
-
 // Duck headers
+#include "sys.h"
 #include "../libduck/base.h"
 
-int main()
-{
-  printf("quack: %s\n", ok());
-  return EXIT_SUCCESS;
+void test () {
+
+}
+
+dfsfsd
+
+
+int main() {
+  print_ok();
+  return 0;
 }

@@ -1,0 +1,7 @@
+-std=c99
+-Wall
+-Wextra
+-pedantic
+-I /nix/store/p5vg4rdba95snvxd7p0km695jnm8vvwh-glibc-2.35-163-dev/include/
+-I /nix/store/ffgrqwwah6jjy5ikd267d6m7w7k5mhxp-clang-11.1.0-lib/lib/clang/11.1.0/include/
+
